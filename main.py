@@ -121,7 +121,7 @@ def convert(item_id: str):
     
 
     # Get the price in USD
-    price_usd = product.get("Unit Price")
+    price_usd = product.get("Unit Price", 0.0)
     print(price_usd)
 
     # Call the exchange rate API to get the USD to EUR conversion rate
